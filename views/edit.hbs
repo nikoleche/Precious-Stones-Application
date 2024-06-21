@@ -1,0 +1,20 @@
+        <main class="edit">
+            <!-- Edit Page (Only for logged-in users) -->
+            <section id="edit">
+                <div class="form">
+                    <h2>Edit item</h2>
+                    <form class="edit-form" method="POST">
+                        <input type="text" name="name" id="name" placeholder="Name" value="Amethyst" {{#if input.name}}value="{{input.name}}"{{/if}} />
+                        <input type="text" name="category" id="category" placeholder="Category" value="Silicate mineral" {{#if input.category}}value="{{input.category}}"{{/if}}/>
+                        <input type="text" name="color" id="color" placeholder="Color" value="Purple" {{#if input.color}}value="{{input.color}}"{{/if}} />
+                        <input type="text" name="image" id="stone-img" placeholder="Image" {{#if input.image}}value="{{input.image}}"{{/if}} />
+                        <input type="text" name="location" id="location" placeholder="Location" value="Artigas, Uruguay" {{#if input.location}}value="{{input.location}}"{{/if}}/>
+                        <input type="text" name="formula" id="formula" placeholder="Formula" value="SiO2" {{#if input.formula}}value="{{input.formula}}"{{/if}} />
+                        <textarea id="description" name="description" placeholder="Description..."
+                            >{{#if input.description}}{{input.description}}{{/if}}</textarea>
+
+                        <button type="submit">Edit</button>
+                    </form>
+                </div>
+            </section>
+        </main>
